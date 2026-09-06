@@ -1,0 +1,48 @@
+HTML Basics
+- HTML, Head, Body
+- Comment
+- Parent/Child Element
+
+Text Elements
+- h1 to h6
+- p
+- span
+- strong
+- br
+Link
+- a:href, Internal, External, target
+<a href="/products">Products</a>           <!-- Internal -->
+<a href="https://facebook.com">Facebook</a> <!-- External -->
+
+Images
+- img, src, alt, width/height, relative vs absolute path
+
+List
+- UL, OL, LI
+
+Container
+- div
+- Block vs Inline
+
+Sementic HTML:
+- Header
+- nav
+- main
+- section
+- article
+- aside 
+- footer
+
+Forms
+- Forms
+- label
+- input
+- textarea
+- select
+- option
+
+HTML Attribute:
+- ID, class, style, title 
+
+
+- Table
