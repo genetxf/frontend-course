@@ -1,0 +1,14 @@
+CSS syntax
+Types of CSS
+Selectors
+Class vs ID
+Specificity
+Inheritance
+Box Model
+Display
+Flexbox
+Responsive design
+Position
+Typography
+Pseudo classes
+Units
