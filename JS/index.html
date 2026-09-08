@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">Learning JS</h1>
+
+    <div>
+        <h2 id="result"></h2>
+        <input id="mark" type="number" placeholder="Enter your mark">
+        <button onclick="find_Great()">Submit</button>
+    </div>
+
+    <script>
+
+        var mark_input = document.getElementById("mark")
+        var result = document.getElementById("result")
+
+        function find_Great() {
+            var std_mark = Number(mark_input.value)
+            if (std_mark >= 80) {
+                result.innerHTML = "A+"
+            } else if (std_mark >= 33) {
+                result.innerHTML = "pass"
+            } else {
+                result.innerHTML = "fail"
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

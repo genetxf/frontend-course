@@ -1,0 +1,54 @@
+Theory 
+- What is JavaScript 
+- Why Javascript 
+- Basic history  of Javascript 
+
+Variable 
+- What is variable?
+Datatype
+- Premat Number, String, Boolean, BigInt, Undefined, Symbol
+Type casting
+String 
+Cancatenates
+
+Arithmetic
++ - * / % **
+Assignment
+= += -= *= /=
+Comparison
+== === != !== > < >= <=
+
+Logical
+&& || !
+
+increment/Decrement
+++ --
+
+
+Ternary ? :
+Nullish ??
+Optional chaining
+?.
+
+Condition 
+function 
+Light turn off and turn on project 
+Login successfully 
+Sum calculator 
+Loop 
+Array
+
+
+Project:
+
+
+
+Simple Calculator
+Student Grade Checker
+Simple Counter
+BMI Calculator
+Login Form Demo
+Number Guessing Game
+
+
+// Arithmetic
