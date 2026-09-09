@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 align="center">Counter</h1>
+    <h2 align="center">Count: <span id="dispaly">0</span></h2>
+    <!-- <button id="btn" onclick="handleCount()">Counter</button> -->
+    <button id="btn">Counter</button>
+
+    <script>
+
+        let count = 0;
+
+        const dispaly = document.getElementById("dispaly");
+        const btn = document.getElementById("btn");
+        // btn.addEventListener('click', handleCount)
+
+        // function handleCount(){
+        //     console.log("count", count)
+        // }
+
+        btn.addEventListener('click', function () {
+            count++;
+            if (count == 5) {
+                count = 0;
+            }
+            dispaly.innerText = count;
+            
+        })
+
+    </script>
+</body>
+
+</html>
