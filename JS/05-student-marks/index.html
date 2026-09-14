@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>Student Marks Practice</h1>
+      <p class="intro">Add marks from 0 to 100 and check the class result.</p>
+
+      <div class="form-row">
+        <label for="markInput">Student mark</label>
+        <input id="markInput" type="number" min="0" max="100" placeholder="Example: 75">
+      </div>
+
+      <div class="actions">
+        <button id="addButton" type="button">Add Mark</button>
+        <button id="clearButton" class="secondary" type="button">Clear</button>
+      </div>
+
+      <p id="message" class="message">No marks added yet.</p>
+    </section>
+
+    <section class="result-panel">
+      <h2>Result</h2>
+
+      <ul id="markList" class="mark-list">
+        <li>Add a mark to start.</li>
+      </ul>
+
+      <div class="stats">
+        <p>Total: <span id="totalOutput">0</span></p>
+        <p>Average: <span id="averageOutput">0</span></p>
+        <p>Passed: <span id="passOutput">0</span></p>
+        <p>Failed: <span id="failOutput">0</span></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
