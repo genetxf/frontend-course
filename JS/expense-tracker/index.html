@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./script.js" defer></script>
+    <title>Todo</title>
+</head>
+<body class="min-h-screen bg-stone-100 text-zinc-900">
+    <main class="mx-auto flex min-h-screen w-full max-w-3xl items-center px-4 py-10 sm:px-6">
+        <section class="w-full rounded-lg border border-zinc-200 bg-white shadow-sm">
+            <header class="border-b border-zinc-200 px-5 py-5 sm:px-7">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-teal-700">Today</p>
+                        <h1 class="mt-1 text-2xl font-semibold tracking-normal text-zinc-950">Todo List</h1>
+                    </div>
+                    <p id="task-count" class="w-fit rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-600">3 tasks</p>
+                </div>
+            </header>
+
+            <div class="space-y-5 px-5 py-5 sm:px-7">
+                <form id="todo-form" class="flex flex-col gap-3 sm:flex-row">
+                    <input
+                        id="input"
+                        type="text"
+                        placeholder="Add a new task"
+                        class="min-h-12 flex-1 rounded-md border border-zinc-300 bg-white px-4 text-base text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-teal-600 focus:ring-4 focus:ring-teal-100"
+                    >
+                    <button
+                        id="submit-btn"
+                        type="submit"
+                        class="min-h-12 rounded-md bg-teal-700 px-5 text-base font-semibold text-white transition hover:bg-teal-800 focus:outline-none focus:ring-4 focus:ring-teal-100"
+                    >
+                        Add Task
+                    </button>
+                </form>
+
+                <ul id="todo-list" class="divide-y divide-zinc-200 rounded-md border border-zinc-200">
+                   
+                    <li class="flex items-center gap-4 px-4 py-4">
+                        <div class="min-w-0 flex-1">
+                            <p class="truncate text-base font-medium text-zinc-900">Create JavaScript practice notes</p>
+                        </div>
+                        <button type="button" data-action="delete" class="rounded-md px-3 py-2 text-sm font-medium text-zinc-500 transition hover:bg-red-50 hover:text-red-700">Delete</button>
+                    </li>
+                    <li class="flex items-center gap-4 px-4 py-4">
+                        <div class="min-w-0 flex-1">
+                            <p class="truncate text-base font-medium text-zinc-900">Clean up project files</p>
+                        </div>
+                        <button type="button" data-action="delete" class="rounded-md px-3 py-2 text-sm font-medium text-zinc-500 transition hover:bg-red-50 hover:text-red-700">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
