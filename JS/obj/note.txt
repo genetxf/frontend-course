@@ -1,0 +1,9 @@
+Topics
+- How to practices
+- Object
+- Delete array 
+- Tailwind
+
+Next
+- spread operator
+- Local store
