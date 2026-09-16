@@ -6,13 +6,12 @@ Theory 
 Variable 
 - What is variable?
 Datatype
-- Premat Number, String, Boolean, BigInt, Undefined, Symbol
-Type casting
-String 
-Cancatenates
+- Primitive : Number, String, Boolean, BigInt, Undefined, 
+Type casting: parseInt, parseFloat('1.1'), Number('1.1'), String
+String: Cancatenates
 
 Arithmetic
-+ - * / % **
++ - * / % 
 Assignment
 = += -= *= /=
 Comparison
@@ -21,36 +20,26 @@ Comparison
 Logical
 && || !
 
-increment/Decrement
+Increment/Decrement
 ++ --
 
 
 Ternary ? :
 Nullish ??
-Optional chaining
-?.
+Optional chaining?.
 
 Condition 
 function 
 Light turn off and turn on project 
-Login successfully 
 Sum calculator 
 Loop 
 Array
-
-
 Project:
 
 
-
-Simple Calculator
 Student Grade Checker
 Simple Counter
-BMI Calculator
-Login Form Demo
-Number Guessing Game
-
-
-// Arithmetic
-
-
+const person = {
+    name:Imran Hossen
+}
+person?.age

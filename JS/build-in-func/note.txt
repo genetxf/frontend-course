@@ -1,0 +1,161 @@
+- Callback function
+- Scope
+- find
+- filter 
+- map
+- foretch
+- reverse
+- spread operator
+- Class and Object
+
+
+
+Callback function
+- Class function is function that can to anther function as a arguments
+
+Examples:
+function greet(name, callback) {
+      console.log(`Hello, ${name}`);
+      callback();
+}
+
+function afterGreeting() {
+      console.log("Greeting finished!");
+}
+
+greet("Sakib", afterGreeting);
+
+
+setTimeout(() => {
+      console.log("2 seconds later");
+}, 2000);
+
+
+function fetchUser(callback) {
+      console.log("Loading user...");
+
+      setTimeout(() => {
+            const user = {
+                  name: "Sakib",
+                  email: "sakib@example.com",
+            };
+
+            callback(user);
+      }, 2000);
+}
+
+function showUserProfile(user) {
+      console.log(`Name: ${user.name}`);
+      console.log(`Email: ${user.email}`);
+}
+
+fetchUser(showUserProfile);
+
+
+
+
+Scope in Javascript
+- There are three type of scope in Javascript
+1, Global
+2, function
+3, Block Scope
+
+
+const appName = "Hazaro"; // Global scope
+
+function showGame() {
+      const gameName = "Friday Night Hazaro"; // Function scope
+
+      if (true) {
+            let playerName = "Sakib"; // Block scope
+
+            console.log(appName);     // কাজ করবে
+            console.log(gameName);    // কাজ করবে
+            console.log(playerName);  // কাজ করবে
+      }
+
+      console.log(appName);     // কাজ করবে
+      console.log(gameName);    // কাজ করবে
+      // console.log(playerName); // Error
+}
+
+showGame();
+
+console.log(appName); // কাজ করবে
+// console.log(gameName); // Error
+
+
+if (true) {
+      var city = "Dhaka";
+      let country = "Bangladesh";
+}
+
+console.log(city); // Dhaka
+// console.log(country); // Error
+
+forEach
+const players = ["Sakib", "Rahim", "Karim"];
+players.forEach((player, index) => {
+      console.log(`${index + 1}. ${player}`);
+});
+
+
+sort
+
+const names = ["Rahim", "Sakib", "Karim"];
+
+names.sort();
+
+console.log(names);
+
+const scores = [100, 5, 25, 80];
+
+scores.sort((a, b) => a - b);
+
+console.log(scores);
+
+const products = [
+      { name: "Burger", price: 250 },
+      { name: "Pizza", price: 500 },
+      { name: "Drink", price: 80 },
+];
+
+const lowToHigh = [...products].sort((a, b) => a.price - b.price);
+
+console.log(lowToHigh);
+
+
+class User {
+      constructor(name, email) {
+            this.name = name;
+            this.email = email;
+      }
+
+      login() {
+            console.log(`${this.name} logged in`);
+      }
+}
+
+const user1 = new User("Sakib", "sakib@example.com");
+const user2 = new User("Rahim", "rahim@example.com");
+
+user1.login(); // Sakib logged in
+user2.login(); // Rahim logged in
+
+
+
+const x = [1]
+const y = [...x];
+
+y[0] = 11;
+
+console.log(x,y);
+
+
+// const x = {
+//     name:"Imran"
+// }
+// // const y = x;
+// const y = {...x};
+// y.name = "Abdullah"
+// console.log(x,y);
